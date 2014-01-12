@@ -3,7 +3,14 @@ Markov-Generator
 
 Generate pseudo-random texts using Markov chains as input.
 
-# Using
+# Using from shell
+A convenience script is provided. Pass the files you want to use a learn experience, and the script will read them and generate a sentence.
+```sh
+    $ php markov.php FILE1 FILE2 ....
+```
+
+# Using from php
+The API is dead simple: first train, then generate.
 ```php
 $markov = new MarkoGenerator();
 
