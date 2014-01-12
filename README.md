@@ -8,8 +8,8 @@ Generate pseudo-random texts using Markov chains as input.
 $markov = new MarkoGenerator();
 
 // train the model
-foreach ($sentence as $sentence)
-    $markov->learn($sentence1);
+foreach (trainSet() as $sentence)
+    $markov->learn($sentence);
 
 // generate a 5-words length sentence
 echo $markov->generate(5);
