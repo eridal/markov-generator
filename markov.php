@@ -10,8 +10,8 @@ if (count($argv) < 2) {
 
 $markov = new MarkovGenerator();
 
-$min = null;
-$max = null;
+$min = PHP_INT_MAX;
+$max = 0;
 
 while (count($argv) > 0) {
     $lines = explode(PHP_EOL, file_get_contents(array_shift($argv)));
