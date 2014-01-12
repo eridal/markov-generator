@@ -1,0 +1,16 @@
+{
+    "name": "eridal/markov-generator",
+    "description": "Pseudo-Random Text Generator",
+
+    "keywords": ["text", "generator", "random"],
+    "license": "MIT",
+
+    "authors": [{
+        "name": "Martin Scotta",
+        "email": "martinscotta@gmail.com"
+    }],
+
+    "require": {
+        "php": ">= 5.3"
+    }
+}
