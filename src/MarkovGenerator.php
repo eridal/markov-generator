@@ -58,7 +58,12 @@ class MarkovGenerator {
      */
     function learn($sentence) {
 
-        $words = explode(' ', $sentence);
+        $words = array();
+
+        foreach (explode(' ', $sentence) as $word) {
+            $word = trim($word, "\t\n\r ");
+            if ($word) $words[] = $word;
+        }
 
         if (count($words) < 3) {
             return;
